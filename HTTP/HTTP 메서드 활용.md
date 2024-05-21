@@ -64,16 +64,6 @@ Host: www.google.com
 * GET은 쿼리 파라미터 사용해서 데이터를 전달
 
 
-HTML Form 데이터 전송
-POST 전송 - 저장
-
-
-
-HTML Form 데이터 전송
-multipart/form-data
-
-
-
 정리
 * HTML Form submit시 POST 전송
 	* 예) 회원가입, 상품주문, 데이터 변경
@@ -87,7 +77,4 @@ multipart/form-data
 	* 다른 종류의 여러 파일과 폼의 내용 함께 전송 가능(그래서 이름이 multipart)
 * 참고: HTML Form 전송은 GET, POST만 지원
 
-
-
-HTTP API 데이터 전송
 
