@@ -18,6 +18,14 @@
     * identity
   
 * Content-Language: 표현 데이터의 자연 언어
+  * 표현 데이터의 자연 언어를 표현
+  * 예)
+    * ko
+    * en
+    * en-US
+  
 * Content-Length: 표현 데이터의 길이
+  * 바이트 단위
+  * Transfer-Encoding(전송 코딩)을 사용하면 Content-Length를 사용하면 안됨
 
 * 표현 헤더는 전송, 응답 둘 다 사용
