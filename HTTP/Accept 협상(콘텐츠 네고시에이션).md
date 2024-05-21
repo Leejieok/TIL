@@ -26,4 +26,16 @@ Quality Values(q)
 Quality Values(q)
 
 * 구체적인 것이 우선이다.
-* Accept: text/*, text/plain, text/plain;format
+* Accept: text/*, text/plain, text/plain;format=flowed, */*
+  1. text/plain;format=flowed
+  2. text/plain
+  3. text/*
+  4. */*
+ 
+### 협상과 우선순위3
+Quality Values(q)
+
+* 구체적인 것을 기준으로 미디어 타입을 맞춘다
+* Accept: text/*;q=0.3, text/html;q=0.7, text/html;level=1,
+          text/html;level=2;q=0.4, */*;q=0.5
+  
