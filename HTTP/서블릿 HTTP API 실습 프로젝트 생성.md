@@ -81,8 +81,8 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
   * http://localhost:8080/hello?username=word
   * 결과: hello world
 * 콘솔 실행결과
-  	HelloServlet.service
-		request = org.apache.catalina.connector.RequestFacade@35d00d49
-		response = org.apache.catalina.connector.ResponseFacade@3b17e583
-    username = servlet
+  HelloServlet.service </br>
+  request = org.apache.catalina.connector.RequestFacade@35d00d49 </br>
+  response = org.apache.catalina.connector.ResponseFacade@3b17e583 </br>
+  username = servlet
  
