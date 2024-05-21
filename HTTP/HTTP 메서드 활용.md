@@ -1,3 +1,5 @@
+
+---
 * 클라이언트에서 서버로 데이터 전송
 * HTTP API 설계 예시
 
@@ -22,7 +24,10 @@
 	* 회원가입, 상품 주문, 데이터 변경
 	* 서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax)
 
- ***정적 데이터 조회
+
+
+---
+ ### 정적 데이터 조회
  쿼리 파라미터 미사용
  
 GET **/static/star.jpg** HTTP/1.1 -->이 경로만 보고 데이터를 찾아서 클라이언트에게 전달
@@ -45,7 +50,9 @@ Content-Length: 34012
 쿼리 파라미터 사용
 
 https://www.google.com/search?q=hello&hl=ko
+
 GET /search==?q=hello&hl=ko== (<-쿼리파라미터) HTTP/1.1
+
 Host: www.google.com
 
 서버에서는 쿼리 파라미터를 기반으로 정렬 필터해서 결과를 동적으로 생성
@@ -60,11 +67,12 @@ Host: www.google.com
 HTML Form 데이터 전송
 POST 전송 - 저장
 
-![[Pasted image 20240520144503.png]]
+
 
 HTML Form 데이터 전송
 multipart/form-data
-![[Pasted image 20240520151019.png]]
+
+
 
 정리
 * HTML Form submit시 POST 전송
@@ -82,4 +90,4 @@ multipart/form-data
 
 
 HTTP API 데이터 전송
-![[Pasted image 20240520152026.png]]
+
