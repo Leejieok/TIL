@@ -80,7 +80,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 * 웹 브라우저 실행
   * http://localhost:8080/hello?username=word
   * 결과: hello world
-* 콘솔 실행결과
+* 콘솔 실행결과 </br>
   HelloServlet.service </br>
   request = org.apache.catalina.connector.RequestFacade@35d00d49 </br>
   response = org.apache.catalina.connector.ResponseFacade@3b17e583 </br>
