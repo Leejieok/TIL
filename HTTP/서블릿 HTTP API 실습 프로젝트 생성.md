@@ -40,3 +40,49 @@ public class ServletApplication {
 @ServletComponentScan
 : 스프링이 해당 패키지의 하위 패키지를 모두 찾아 자동으로 서블릿에 등록 (서블릿 자동 등록)
 
+```
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+
+@WebServlet(name= "helloServlet", urlPatterns = "/hello") //url이 /hello로 오면 해당 클래스가 실행됨.
+public class HelloServlet extends HttpServlet {
+
+  @Override
+  protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    System.out.println("HelloServlet.service");
+    System.out.println("request = " + request);
+    System.out.println("response = " + response);
+
+    String username = request.getParameter("username");
+    System.out.println("username = " + username);
+
+    response.setContentType("text/plain");
+    response.setCharacterEncoding("utf-8");
+    response.getWriter().write("hello" + username);
+  }
+}  
+
+```
+서블릿 사용 시 HttpServlet 상속 필수
+
+* @WebServlet 서블릿 어노테이션
+  * name: 서블릿 이름
+  * urlPatterns: URL매핑
+ 
+HTTP 요청을 통해 매핑된 URL이 호출되면 서블릿 컨테이너는 다음 메서드를 실행한다.
+protected void service(HttpServletRequest request, HttpServletResponse response)
+
+* 웹 브라우저 실행
+  * http://localhost:8080/hello?username=word
+  * 결과: hello world
+* 콘솔 실행결과
+  	HelloServlet.service
+		request = org.apache.catalina.connector.RequestFacade@35d00d49
+		response = org.apache.catalina.connector.ResponseFacade@3b17e583
+    username = servlet
+ 
