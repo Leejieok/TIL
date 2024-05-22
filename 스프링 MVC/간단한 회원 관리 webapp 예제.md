@@ -29,7 +29,6 @@ public class Member {
 	public Member() {}
 }
 ```
-***
 
 1. 매개변수가 있는 생성자: 이 생성자는 객체를 생성할 때 username 과 age를 필수적으로 </br>
 받아 초기화 하도록 한다. 이를 통해 생성 시 필요한 필드가 모두 초기화 되도록 보장한다 </br>
