@@ -201,6 +201,6 @@ public void render(HttpServletRequest request, HttpServletResponse response) thr
 프론트 컨트롤러의 도입으로 MyView객체의 render()를 호출하는 부분을 모두 일관되게 처리할 수 있다.  </br>
 각각의 컨트롤러는 MyView객체를 생성만 해서 반환하면 된다.</br>
 
-* 실행
+* 실행</br>
 등록: http://localhost:8080/front-controller/v2/members/new-form</br>
 목록: http://localhost:8080/front-controller/v2/members
