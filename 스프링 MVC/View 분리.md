@@ -1,7 +1,7 @@
 ***
 ## View 분리 -v2
 
-`모든 컨트롤러에서 뷰로 이동하는 부분에 중복이 있고, 깔끔하지 않다.`
+**모든 컨트롤러에서 뷰로 이동하는 부분에 중복이 있고, 깔끔하지 않다.**
 ```
 String viewPath = "/WEB-INF/views/new-form.jsp";
 RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
