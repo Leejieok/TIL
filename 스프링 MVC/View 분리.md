@@ -11,7 +11,7 @@ dispatcher.forward(request, response);
 이 부분을 깔끔하게 분리하기 위해 별도로 뷰를 처리하는 객체를 만든다.
 
 ## MyView </br>
-뷰 객체는 이후 다른 버전에서도 함께 사용하므로 패키지 위치를 `frontcontrolle`에 두었다.
+뷰 객체는 이후 다른 버전에서도 함께 사용하므로 패키지 위치를 `frontcontroller`에 두었다.
 
 ```
 package hello.servlet.web.frontcontroller;
