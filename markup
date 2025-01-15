@@ -1,0 +1,102 @@
+GUI
+CLI
+
+I : interface -> 대상을 제어하는 수단
+interface : 리모컨
+
+GUI <-> TUI (Text User Interface) --- 이 말은 잘안씁니다.
+CLI = Command Line Interface
+
+=======================================
+
+Window OS의 Interface
+GUI = "Windows Shell" 
+CLI = "Power shell", "명령프롬프트(cmd라고 불러요)"
+
+Linux OS의 Interface
+GUI : "GNOME"
+CLI : "Bash"
+
+Bash 왜 쓸까??
+Bash가 가진 장점 : Bash가 편해서, Tab키 자동완성
+
+Git 을 다룰때 Interface
+GUI : "Github Desktop", "소스트리" 
+CLI : git bash(엄청 많이 쓸거에요~~)
+
+git 쓸때 GUI로 다뤄야할까? CLI로 다뤄야 할까?
+GUI 장점1 : 보기 편하다. 친숙하다.
+GUI 장점2 : 복잡한 분석(Graph 같은 것을 훨씬 보기좋다)
+CLI 장점1 : 빠르다(Commit 명령어 2~3초 면 끝)
+CLI 장점2 : 20년전에 배웠으면, 현재도 쓰고 있고, 미래에도 쓸 예정
+
+결론은 : 둘다 써야하지만 대부분 CLI 쓸겁니다.
+
+================================================
+
+너 IDE 뭐 써??
+
+VScode : IDE??  NO!!!
+텍스트 에디터 : 여기에 익스텐션을 추가해서 마치 IDE처럼 사용
+
+IDE
+Python : PyCharm, 쥬피터노트북 
+C# : Visual Studio
+Java : IntelliJ
+
+==============================================
+
+민지W
+Minnimal GNU for Windows
+: 윈도우환경에서 리눅스에 쓰이는 툴들을 쓸 수 있게 가볍게 만든 프로젝트
+
+===============================================
+
+리눅스는 항상 HOME 디렉토리 : ~
+cd ~ : 홈 디렉토리
+cd - : 뒤로가기
+cd .. : 상위 디렉토리
+
+touch : 파일 생성
+mkdir : 폴더(디렉토리) 생성
+start : 파일 열기
+rm : 삭제
+cp : 복사
+
+절대 경로 : ~/Desktop/practice
+상대 경로 : ./practice2
+               ../practice/practice3
+
+===============================================
+
+git : 분산 버전 관리 시스템
+
+git init : git 시작
+rm -rf .git : git 삭제(git 종료)
+
+git config --global user.name "이름"
+git config --global user.email "이메일"
+
+git push 이후 자리 옮겼을 때 제어판의 windows 자격 증명
+-> 일반 자격 증명 에서 github 삭제하기
+
+git add . : staging area 에 올리기
+git status : staging area 작업 파일 확인
+
+git commit -m "메시지명" : repository에 올리기
+git log : repository 작업 파일 확인(커밋 되어 있는지 확인)
+
+
+================================================
+
+markdown 왜 배울까?
+: github에 프로젝트 올릴때 README.md 파일에 활용
+
+================================================
+
+vscode 단축키
+
+ctrl + b : 사이드바
+ctrl + ` : 터미널 열기/닫기
+ctrl + , : setting 열기
+ctrl + s : 저장
